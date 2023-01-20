@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormMonitoringSetUp">
+<blockquote>SELF MONITORING SET-UP</blockquote>
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td width="185" class="rb">Self Monitoring Enabled ?</td>
+<td class="bb"><?=$129_monitoringEnabled?>&nbsp;</td>
+<td width="20" class="lb">1.</td>
+<td width="130" class="m4"><input type="radio" name="129_monitoringEnabled" <?=$503_RADIO_CHECKED_YES_7?> value="yes">Yes&nbsp;&nbsp;|<input type="radio" name="129_monitoringEnabled" <?=$504_RADIO_CHECKED_NO_7?> value="no">No</td></tr>
+<tr>
+<td class="rb">Resend Error Reports</td>
+<td class="bb"><?=$130_resendErrorRep?>&nbsp;</td>
+<td class="lb">2.</td>
+<td class="m4"><select name="130_resendErrorRep" size="1">
+<option value="">-- Select here --</option>
+<option value="0">Never</option>
+<option value="1">Every Day</option>
+<option value="2">Every Week</option>
+<option value="3">Every Month</option>
+</select></td></tr>
+<tr>
+<td class="rb">Number Of Inactive Days Allowed</td>
+<td class="bb"><?=$131_inactiveDays?>&nbsp;</td>
+<td class="lb">3.</td>
+<td class="m4"><input type="text" name="131_inactiveDays" size="16" maxlength="3" value="<?=$131_inactiveDays?>"></td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+</td></tr>
+</table></body></html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormGlobalSettings">
+<blockquote>GLOBAL &nbsp;SETTINGS</blockquote>
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td class="rb" width="390" height="25">Text and Audio Prompts Language</td>
+<td class="bb"><?=$132_intfaceLanguage?>&nbsp;</td>
+<td class="lb" width="20">1.</td>
+<td width="110" class="m4"><select name="132_intfaceLanguage">
+<option value="">-- Select here --</option>
+<option value="">--------------------</option>
+<option value="0">English</option>
+<option value="1">Spanish</option>
+<option value="2">French</option>
+<option value="3">German</option>
+</select></td></tr>
+<tr>
+<td class="rb">'PAGE' Channel Heard by Order Taker ?</td>
+<td class="bb"><?=$134_channelByOT?>&nbsp;</td>
+<td class="lb">2.</td>
+<td class="m4"><input type="radio" name="134_channelByOT" <?=$511_RADIO_CHECKED_YES_11?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="134_channelByOT" <?=$512_RADIO_CHECKED_NO_11?> value="no">No</td></tr>
+<tr>
+<td class="rb">Number of Base Stations at This Site</td>
+<td class="bb"><?=$135_stationsNumber?>&nbsp;</td>
+<td class="lb">3.</td>
+<td class="m4"><input type="radio" name="135_stationsNumber" <?=$529_RADIO_CHECKED_ONE_20?> value="1">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<input type="radio" name="135_stationsNumber" <?=$530_RADIO_CHECKED_TWO_20?> value="2">2</td></tr>
+<tr>
+<td class="rb">Lane Number of This Base Station</td>
+<td class="bb"><?=$136_laneNumber?>&nbsp;</td>
+<td class="lb">4.</td>
+<td class="m4"><select name="136_laneNumber">
+<option value="">-- Select here --</option>
+<option value="">--------------------</option>
+<option value="1">Lane #1</option>
+<option value="2">Lane #2</option>
+</select>
+</td></tr>
+<tr>
+<td class="rb">'Store Is Now Closed' &nbsp;Prompt ?</td>
+<td class="bb"><?=$138_storeIsNowClosed?>&nbsp;</td>
+<td class="lb">5.</td>
+<td class="m4"><input type="radio" name="138_storeIsNowClosed" <?=$513_RADIO_CHECKED_YES_12?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="138_storeIsNowClosed" <?=$514_RADIO_CHECKED_NO_12?> value="no">No</td></tr>
+<tr>
+<td class="rb">'Pull Ahead' Prompt <span class="th1c">*</span> ?</td>
+<td class="bb"><?=$137_tandemPrompt?>&nbsp;</td>
+<td class="lb">6.</td>
+<td class="m4"><input type="radio" name="137_tandemPrompt" <?=$515_RADIO_CHECKED_YES_13?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="137_tandemPrompt" <?=$516_RADIO_CHECKED_NO_13?> value="no">No</td></tr>
+<tr>
+<td class="rb">OrderPoint Prompts in English ?</td>
+<td class="bb"><?=$245_orderPromptsEngl?>&nbsp;</td>
+<td class="lb">7.</td>
+<td class="m4"><input type="radio" name="245_orderPromptsEngl" <?=$539_RADIO_CHECKED_PROMPTS_ENGL_YES_25?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="245_orderPromptsEngl" <?=$540_RADIO_CHECKED_PROMPTS_ENGL_NO_25?> value="no">No</td></tr>
+<tr>
+<td class="rb">OrderPoint Prompts in Spanish ?</td>
+<td class="bb"><?=$246_orderPromptsSpan?>&nbsp;</td>
+<td class="lb">8.</td>
+<td class="m4"><input type="radio" name="246_orderPromptsSpan" <?=$541_RADIO_CHECKED_PROMPTS_SPAN_YES_26?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="246_orderPromptsSpan" <?=$542_RADIO_CHECKED_PROMPTS_SPAN_NO_26?> value="no">No</td></tr>
+<tr>
+<td class="rb">OrderPoint Prompts in French ?</td>
+<td class="bb"><?=$236_orderPromptsFren?>&nbsp;</td>
+<td class="lb">9.</td>
+<td class="m4"><input type="radio" name="236_orderPromptsFren" <?=$533_RADIO_CHECKED_PROMPTS_FREN_YES_22?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="236_orderPromptsFren" <?=$534_RADIO_CHECKED_PROMPTS_FREN_NO_22?> value="no">No</td></tr>
+<tr>
+<td class="rb">OrderPoint Prompts in German ?</td>
+<td class="bb"><?=$605_orderPromptsGerm?>&nbsp;</td>
+<td class="lb">10.</td>
+<td class="m4"><input type="radio" name="605_orderPromptsGerm" <?=$606_RADIO_CHECKED_PROMPTS_GERM_YES_22?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="605_orderPromptsGerm" <?=$607_RADIO_CHECKED_PROMPTS_GERM_NO_22?> value="no">No</td></tr>
+<tr>
+<td class="rb">Order Takers in CROSS Lane Mode ?</td>
+<td class="bb"><?=$247_orderTakersInCrossLane?>&nbsp;</td>
+<td class="lb">11.</td>
+<td class="m4"><input type="radio" name="247_orderTakersInCrossLane" <?=$543_RADIO_CHECKED_TALK_CROSS_ONE_27?> value="1">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<input type="radio" name="247_orderTakersInCrossLane" <?=$544_RADIO_CHECKED_TALK_CROSS_TWO_27?> value="2">2</td></tr>
+<tr>
+<td class="rb">'PAGE' Messages Can Cross Lanes ?</td>
+<td class="bb"><?=$248_pageCanCross?>&nbsp;</td>
+<td class="lb">12.</td>
+<td class="m4"><input type="radio" name="248_pageCanCross" <?=$545_RADIO_CHECKED_PAGE_CROSS_YES_28?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="248_pageCanCross" <?=$546_RADIO_CHECKED_PAGE_CROSS_NO_28?> value="no">No</td></tr>
+<tr>
+<td class="rb">Order Point TALK with no vehicle present ?</td>
+<td class="bb"><?=$593_inactVD?>&nbsp;</td>
+<td class="lb">13.</td>
+<td class="m4"><input type="radio" name="593_inactVD" <?=$594_RADIO_CHECKED_INACT_VD_YES_DEF?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="593_inactVD" <?=$595_RADIO_CHECKED_INACT_VD_NO_DEF?> value="no">No</td></tr>
+<tr>
+<td class="rb">Auto Unmute HS microphone in HandsFree mode ?</td>
+<td class="bb"><?=$250_autoUnmute?>&nbsp;</td>
+<td class="lb">14.</td>
+<td class="m4"><input type="radio" name="250_autoUnmute" <?=$549_RADIO_CHECKED_AUTO_UNMUTE_YES_40?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="250_autoUnmute" <?=$251_RADIO_CHECKED_AUTO_UNMUTE_NO_40?> value="no">No</td></tr>
+<tr>
+<td class="rb">External Audio In Routing Mode ?</td>
+<td class="bb"><?=$921_EXT_AUD_CTRL?>&nbsp;</td>
+<td class="lb">15.</td>
+<td class="m4"><select name="921_EXT_AUD_CTRL" size="1">
+<option value="">-Select here-</option>
+<option value="0">OFF</option>
+<option value="1">GATE</option>
+<option value="2">ON</option>
+</select></td></tr>
+<tr>
+<td class="rb">External Audio In Gate Threshold Level</td>
+<td class="bb"><?=$930_EXT_AUD_THRESHOLD?>&nbsp;</td>
+<td class="lb">16.</td>
+<td class="m4"><input type="text" name="930_EXT_AUD_THRESHOLD" size="3" maxlength="3" value="<?=$930_EXT_AUD_THRESHOLD?>"></td></tr>
+<tr>
+<td class="rb">Mute External Audio In When Busy ?</td>
+<td class="bb"><?=$927_EXT_AUD_MUTE?>&nbsp;</td>
+<td class="lb">17.</td>
+<td class="m4"><input type="radio" name="927_EXT_AUD_MUTE" <?=$928_RADIO_EXT_AUD_MUTE_YES?> value="yes">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="927_EXT_AUD_MUTE" <?=$929_RADIO_EXT_AUD_MUTE_NO?> value="no">No</td></tr>
+<tr>
+  <td class="rb">Kitchen Noise Gain Plan ?</td>
+  <td class="bb"><?=$984_KITCHEN_NOISE_PLAN_DEF?>&nbsp;</td>
+  <td class="lb">18.</td>
+  <td class="m4"><input type="radio" name="984_KITCHEN_NOISE_PLAN_DEF" <?=$986_RADIO_KNP_DYNAMIC_DEF?> value="dynamic">Dynamic&nbsp;&nbsp;|&nbsp;<input type="radio" name="984_KITCHEN_NOISE_PLAN_DEF" <?=$985_RADIO_KNP_OFF_DEF?> value="off">Off</td>
+</tr>
+<?=$987_KITCHEN_NOISE_PLAN_BANNER_DEF?>
+<tr>
+<td colspan="4" class="bg2">*<span class="th1d">/ Tandem Mode, ONLY applicable for Lane 2 ! /</span></td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+</td></tr>
+</table>
+<script type="text/javascript">
+if (<?=$938_menuBarAutoRefresh?>)
+{
+parent.banner.window.location.reload();
+}
+</script>
+</body></html>

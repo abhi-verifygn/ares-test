@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormDriveVolume">
+<blockquote>DRIVE-THRU VOLUME SETTINGS</blockquote>
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td class="rb" width="260">Inbound Microphone Volume</td>
+<td class="bb"><?=$111_inboundMicVol?>&nbsp;</td>
+<td width="20" class="lb">1.</td>
+<td width="65" class="m4"><input type="text" name="111_inboundMicVol" size="4" maxlength="3" value="<?=$111_inboundMicVol?>"></td></tr>
+<tr>
+<td class="rb">Outbound Talk Volume</td>
+<td class="bb"><?=$112_outboundTalk?>&nbsp;</td>
+<td class="lb">2.</td>
+<td class="m4"><input type="text" name="112_outboundTalk" size="4" maxlength="3" value="<?=$112_outboundTalk?>"></td></tr>
+<tr>
+<td class="rb">Vehicle Alert Volume</td>
+<td class="bb"><?=$113_vehicleAlert?>&nbsp;</td>
+<td class="lb">3.</td>
+<td class="m4"><input type="text" name="113_vehicleAlert" size="4" maxlength="3" value="<?=$113_vehicleAlert?>"></td></tr>
+<tr>
+<td class="rb">Outbound Greeter Message Volume</td>
+<td class="bb"><?=$252_gtrMsgVolume?>&nbsp;</td>
+<td class="lb">4.</td>
+<td class="m4"><input type="text" name="252_gtrMsgVolume" size="4" maxlength="3" value="<?=$252_gtrMsgVolume?>"></td></tr>
+<tr>
+<td class="rb">External Audio In Volume</td>
+<td class="bb"><?=$922_EXT_AUD_GAIN?>&nbsp;</td>
+<td class="lb">5.</td>
+<td class="m4"><input type="text" name="922_EXT_AUD_GAIN" size="4" maxlength="3" value="<?=$922_EXT_AUD_GAIN?>"></td></tr>
+<tr>
+<td class="rb">Mic Preamp Gain (Installer only Option)</td>
+<td class="bb"><?=$257_micPreampGain?>&nbsp;</td>
+<td class="lb">6.</td>
+<td class="m4"><input type="text" name="257_micPreampGain" size="4" maxlength="3" value="<?=$257_micPreampGain?>"></td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+</td></tr>
+</table></body></html>

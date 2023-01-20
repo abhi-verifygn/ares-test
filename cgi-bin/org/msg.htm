@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+<script type="text/javascript" src="../load.js"></script>
+<script type="text/javascript">
+if (<?=$938_menuBarAutoRefresh?>)
+{
+parent.menu.window.location.reload();
+}
+</script>
+</head>
+
+<body>
+<img src="popup_bg.gif" style="display:none;">
+<div id='blockScreen' class='blockScreen'>&nbsp;</div>
+<div id='loading_popup' class='popup'>
+    <div id='loading_top' class='top'>
+        <img src='working.gif'>
+    </div>
+    <div id='loading_bottom' class='bottom'>
+        <p>Applying changes...</p>
+    </div>
+</div>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormGreeterSetup">
+<blockquote>GREETER MESSAGE PROPERTIES</blockquote>
+
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><input type="submit" name="936_GrtAction" value="Apply Changes" onclick='show_popup("loading_popup")'></td></tr>
+</table>
+
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td class="rb" colspan="3">Greeter Installed? </td>
+<td class="bb" colspan="5"><?=$798_GREETER_PRESENT?>&nbsp;</td>
+<td class="lb">&nbsp;</td>
+<td class="m4" colspan="3">&nbsp;</td></tr>
+<tr>
+<td class="rb" colspan="3">Playback After Delay of<span class="th1c">*</span></td>
+<td class="bb" colspan="5"><?=CLIP_GLOBAL.u8Delay?>&nbsp;</td>
+<td class="lb">1.</td>
+<td class="m4" colspan="3"><input type="text" name="CLIP_GLOBAL.u8Delay" size="3" maxlength="3" value="<?=CLIP_GLOBAL.u8Delay?>"></td></tr>
+<tr>
+<td class="rb" colspan="3">Playback to The Headsets</td>
+<td class="bb" colspan="5"><?=ToYesNo(CLIP_GLOBAL.u8PlayHeadset)?>&nbsp;</td>
+<td class="lb">2.</td>
+<td class="m4" colspan="3"><input type="radio" name="CLIP_GLOBAL.u8PlayHeadset" <?=ToChecked(CLIP_GLOBAL.u8PlayHeadset)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_GLOBAL.u8PlayHeadset" <?=ToChecked(!(CLIP_GLOBAL.u8PlayHeadset))?> value="0">No</td></tr>
+<tr>
+<td class="rb" colspan="3">Playback Through Monitor</td>
+<td class="bb" colspan="5"><?=ToYesNo(CLIP_GLOBAL.u8PlayMonitor)?>&nbsp;</td>
+<td class="lb">3.</td>
+<td class="m4" colspan="3"><input type="radio" name="CLIP_GLOBAL.u8PlayMonitor" <?=ToChecked(CLIP_GLOBAL.u8PlayMonitor)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_GLOBAL.u8PlayMonitor" <?=ToChecked(!(CLIP_GLOBAL.u8PlayMonitor))?> value="0">No</td></tr>
+<tr>
+<td class="rb" colspan="3">Tone to The Headsets During Playback</td>
+<td class="bb" colspan="5"><?=ToYesNo(CLIP_GLOBAL.u8HeadsetTones)?>&nbsp;</td>
+<td class="lb">4.</td>
+<td class="m4" colspan="3"><input type="radio" name="CLIP_GLOBAL.u8HeadsetTones" <?=ToChecked(CLIP_GLOBAL.u8HeadsetTones)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_GLOBAL.u8HeadsetTones" <?=ToChecked(!(CLIP_GLOBAL.u8HeadsetTones))?> value="0">No</td></tr>
+<tr>
+<td class="rb" colspan="3">Play Restaurant Closed Message</td>
+<td class="bb" colspan="5"><?=ToYesNo(CLIP_GLOBAL.boPlayClosed)?>&nbsp;</td>
+<td class="lb">5.</td>
+<td class="m4" colspan="3"><input type="radio" name="CLIP_GLOBAL.boPlayClosed" <?=ToChecked(CLIP_GLOBAL.boPlayClosed)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_GLOBAL.boPlayClosed" <?=ToChecked(!(CLIP_GLOBAL.boPlayClosed))?> value="0">No</td></tr>
+<tr>
+<td class="rb" colspan="3">Play External Detector Message</td>
+<td class="bb" colspan="5"><?=ToExtDetMsg(CLIP_GLOBAL.u8PlayExtDet)?>&nbsp;</td>
+<td class="lb">6.</td>
+<td class="m4" colspan="3"><select name="CLIP_GLOBAL.u8PlayExtDet" size="1">
+<option value="">-- Select here --</option>
+<option value="0">OFF</option>
+<option value="1">Message #1</option>
+<option value="2">Message #2</option>
+<option value="3">Message #3</option>
+<option value="4">Message #4</option>
+<option value="5">Message #5</option>
+<option value="6">Message #6</option>
+<option value="7">Message #7</option>
+<option value="8">Message #8</option>
+<option value="9">Message #9</option>
+<option value="10">Message #10</option>
+<option value="11">Message #11</option>
+<option value="12">Message #12</option>
+<option value="13">Message #13</option>
+<option value="14">Message #14</option>
+<option value="15">Message #15</option>
+<option value="16">Message #16</option>
+</select></td></tr>
+<tr>
+<td class="rb" colspan="3">Play Tandem Pull Ahead Message<span class="th1c">**</span></td>
+<td class="bb" colspan="5"><?=ToYesNo(CLIP_GLOBAL.boPlayPullAhead)?>&nbsp;</td>
+<td class="lb">7.</td>
+<td class="m4" colspan="3"><input type="radio" name="CLIP_GLOBAL.boPlayPullAhead" <?=ToChecked(CLIP_GLOBAL.boPlayPullAhead)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_GLOBAL.boPlayPullAhead" <?=ToChecked(!(CLIP_GLOBAL.boPlayPullAhead))?> value="0">No</td></tr>
+<tr>
+<td class="rb" colspan="3">Playback Mode</td>
+<td class="bb" colspan="5"><?=CLIP_GLOBAL.szPlayMode?>&nbsp;</td>
+<td class="lb">8.</td>
+<td class="m4" colspan="3"><select name="CLIP_GLOBAL.u8PlayMode" size="1">
+<option value="">-- Select here --</option>
+<option value="0">Alternating</option>
+<option value="1">Once Each</option>
+</select></td></tr>
+
+<tr><td class="bg2" colspan="12">* <span class="th1d">/ in seconds /</span><br>**<span class="th1d">/ Tandem Mode, ONLY applicable for Lane 2 ! /</span></td></tr>
+</table>
+
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<!--************************************************* Message 1 *****************************************************-->
+<tr>
+<th class="th1" ><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#1&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[0].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[0].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[0].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[0].boEnable)?>&nbsp;</td>
+<td class="lb">9.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[0].boEnable" <?=ToChecked(CLIP_AUDIO[0].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[0].boEnable" <?=ToChecked(!(CLIP_AUDIO[0].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 2 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#2&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[1].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[1].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[1].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[1].boEnable)?>&nbsp;</td>
+<td class="lb">10.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[1].boEnable" <?=ToChecked(CLIP_AUDIO[1].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[1].boEnable" <?=ToChecked(!(CLIP_AUDIO[1].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 3 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#3&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[2].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[2].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[2].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[2].boEnable)?>&nbsp;</td>
+<td class="lb">11.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[2].boEnable" <?=ToChecked(CLIP_AUDIO[2].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[2].boEnable" <?=ToChecked(!(CLIP_AUDIO[2].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 4 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#4&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[3].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[3].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[3].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[3].boEnable)?>&nbsp;</td>
+<td class="lb">12.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[3].boEnable" <?=ToChecked(CLIP_AUDIO[3].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[3].boEnable" <?=ToChecked(!(CLIP_AUDIO[3].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 5 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#5&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[4].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[4].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[4].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[4].boEnable)?>&nbsp;</td>
+<td class="lb">13.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[4].boEnable" <?=ToChecked(CLIP_AUDIO[4].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[4].boEnable" <?=ToChecked(!(CLIP_AUDIO[4].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 6 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#6&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[5].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[5].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[5].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[5].boEnable)?>&nbsp;</td>
+<td class="lb">14.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[5].boEnable" <?=ToChecked(CLIP_AUDIO[5].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[5].boEnable" <?=ToChecked(!(CLIP_AUDIO[5].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 7 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#7&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[6].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[6].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[6].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[6].boEnable)?>&nbsp;</td>
+<td class="lb">15.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[6].boEnable" <?=ToChecked(CLIP_AUDIO[6].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[6].boEnable" <?=ToChecked(!(CLIP_AUDIO[6].boEnable))?> value="0">No</td>
+</tr>
+<!--************************************************* Message 8 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#8&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[7].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[7].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[7].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[7].boEnable)?>&nbsp;</td>
+<td class="lb">16.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[7].boEnable" <?=ToChecked(CLIP_AUDIO[7].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[7].boEnable" <?=ToChecked(!(CLIP_AUDIO[7].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 9 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#9&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[8].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[8].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[8].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[8].boEnable)?>&nbsp;</td>
+<td class="lb">17.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[8].boEnable" <?=ToChecked(CLIP_AUDIO[8].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[8].boEnable" <?=ToChecked(!(CLIP_AUDIO[8].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 10 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#10&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[9].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[9].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[9].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[9].boEnable)?>&nbsp;</td>
+<td class="lb">18.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[9].boEnable" <?=ToChecked(CLIP_AUDIO[9].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[9].boEnable" <?=ToChecked(!(CLIP_AUDIO[9].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 11 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#11&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[10].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[10].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[10].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[10].boEnable)?>&nbsp;</td>
+<td class="lb">19.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[10].boEnable" <?=ToChecked(CLIP_AUDIO[10].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[10].boEnable" <?=ToChecked(!(CLIP_AUDIO[10].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 12 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#12&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[11].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[11].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[11].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[11].boEnable)?>&nbsp;</td>
+<td class="lb">20.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[11].boEnable" <?=ToChecked(CLIP_AUDIO[11].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[11].boEnable" <?=ToChecked(!(CLIP_AUDIO[11].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 13 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#13&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[12].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[12].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[12].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[12].boEnable)?>&nbsp;</td>
+<td class="lb">21.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[12].boEnable" <?=ToChecked(CLIP_AUDIO[12].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[12].boEnable" <?=ToChecked(!(CLIP_AUDIO[12].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 14 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#14&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[13].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[13].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[13].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[13].boEnable)?>&nbsp;</td>
+<td class="lb">22.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[13].boEnable" <?=ToChecked(CLIP_AUDIO[13].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[13].boEnable" <?=ToChecked(!(CLIP_AUDIO[13].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 15 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#15&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[14].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[14].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[14].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[14].boEnable)?>&nbsp;</td>
+<td class="lb">23.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[14].boEnable" <?=ToChecked(CLIP_AUDIO[14].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[14].boEnable" <?=ToChecked(!(CLIP_AUDIO[14].boEnable))?> value="0">No</td>
+</tr>
+
+<!--************************************************* Message 16 *****************************************************-->
+<tr>
+<th class="th1"><center>Message</center></th>
+<th class="th1" colspan="3"><center>Name</center></th>
+<th class="th1" colspan="2"><center>Type</center></th>
+<th class="th1" colspan="2"><center>Duration<span class="th1b">/ seconds /</span></center></th>
+<th class="th1" colspan="3"><center>Enabled</center></th>
+</tr>
+
+<tr>
+<td class="rb"><center>#16&nbsp;</center></td>
+<td class="bb" colspan="3"><?=CLIP_AUDIO[15].szName?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[15].szType?>&nbsp;</td>
+<td class="bb" colspan="2"><?=CLIP_AUDIO[15].u8Duration?>&nbsp;</td>
+<td class="bb"><?=ToYesNo(CLIP_AUDIO[15].boEnable)?>&nbsp;</td>
+<td class="lb">24.</td>
+<td class="m4"><input type="radio" name="CLIP_AUDIO[15].boEnable" <?=ToChecked(CLIP_AUDIO[15].boEnable)?> value="1">Yes&nbsp;&nbsp;|&nbsp;<input type="radio" name="CLIP_AUDIO[15].boEnable" <?=ToChecked(!(CLIP_AUDIO[15].boEnable))?> value="0">No</td>
+</tr>
+</table>
+</table>
+
+
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><input type="submit" name="936_GrtAction" value="Apply Changes" onclick='show_popup("loading_popup")'></td></tr>
+</table>
+</form>
+</td></tr>
+</body></html>

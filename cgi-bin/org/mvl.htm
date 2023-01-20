@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormMonitorVolume">
+<blockquote>MONITOR VOLUME SETTINGS</blockquote>
+<table class="M1" id="m1a" align="center" border="1" cellspacing="6">
+<tr>
+<td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<th class="th1a">Type</th>
+<th class="th1" colspan="3">Volume</th>
+<th class="th1" colspan="3">State</th></tr>
+<tr>
+<td width="170" class="rb">Inbound Listen</td>
+<td class="bb">&nbsp;<?=$114_inboundVolume?></td>
+<td width="20" class="lb">1.</td>
+<td width="62" class="m4"><input type="text" name="114_inboundVolume" size="4" maxlength="3" value="<?=$114_inboundVolume?>"></td>
+<td class="bb">&nbsp;<?=$115_inboundState?></td>
+<td width="20" class="lb">2.</td>
+<td width="200" class="m4"><input type="radio" name="115_inboundState" <?=$491_RADIO_CHECKED_ON_1?> value="on">On&nbsp;&nbsp;|<input type="radio" name="115_inboundState" <?=$492_RADIO_CHECKED_OFF_1?> value="off">Off</td></tr>
+<tr>
+<td class="rb">Outbound Talk</td>
+<td class="bb">&nbsp;<?=$116_outboundVolume?></td>
+<td class="lb">3.</td>
+<td class="m4"><input type="text" name="116_outboundVolume" size="4" maxlength="3" value="<?=$116_outboundVolume?>"></td>
+<td class="bb">&nbsp;<?=$117_outboundState?></td>
+<td class="lb">4.</td>
+<td class="m4"><input type="radio" name="117_outboundState" <?=$493_RADIO_CHECKED_ON_2?> value="on">On&nbsp;&nbsp;|<input type="radio" name="117_outboundState" <?=$494_RADIO_CHECKED_OFF_2?> value="off">Off</td></tr>
+<tr>
+<td class="rb">Vehicle Present</td>
+<td class="bb">&nbsp;<?=$118_vehiclePresentVolume?></td>
+<td class="lb">5.</td>
+<td class="m4"><input type="text" name="118_vehiclePresentVolume" size="4" maxlength="3" value="<?=$118_vehiclePresentVolume?>"></td>
+<td class="bb">&nbsp;<?=$119_vehiclePresentState?></td>
+<td class="lb">6.</td>
+<td class="m4"><input type="radio" name="119_vehiclePresentState" <?=$495_RADIO_CHECKED_ON_3?> value="on">On&nbsp;&nbsp;|<input type="radio" name="119_vehiclePresentState" <?=$496_RADIO_CHECKED_OFF_3?> value="off">Off</td></tr>
+<tr>
+<td class="rb">Vehicle Approach</td>
+<td class="bb">&nbsp;<?=$120_vehicleApprVolume?></td>
+<td class="lb">7.</td>
+<td class="m4"><input type="text" name="120_vehicleApprVolume" size="4" maxlength="3" value="<?=$120_vehicleApprVolume?>"></td>
+<td class="bb">&nbsp;<?=$121_vehicleApprState?></td>
+<td class="lb">8.</td>
+<td class="m4"><input type="radio" name="121_vehicleApprState" <?=$497_RADIO_CHECKED_ON_4?> value="on">On&nbsp;&nbsp;|<input type="radio" name="121_vehicleApprState" <?=$498_RADIO_CHECKED_OFF_4?> value="off">Off</td></tr>
+<tr>
+<td class="rb">Page Messages</td>
+<td class="bb">&nbsp;<?=$122_pageMessagesVolume?></td>
+<td class="lb">9.</td>
+<td class="m4"><input type="text" name="122_pageMessagesVolume" size="4" maxlength="3" value="<?=$122_pageMessagesVolume?>"></td>
+<td class="bb">&nbsp;<?=$123_pageMessagesState?></td>
+<td class="lb">10.</td>
+<td class="m4"><input type="radio" name="123_pageMessagesState" <?=$499_RADIO_CHECKED_ON_5?> value="on">On&nbsp;&nbsp;|<input type="radio" name="123_pageMessagesState" <?=$500_RADIO_CHECKED_OFF_5?> value="off">Off</td></tr>
+<tr>
+<td class="rb">External Audio In</td>
+<td class="bb">&nbsp;<?=$923_EXT_AUD_VOLUME?></td>
+<td class="lb">11.</td>
+<td class="m4"><input type="text" name="923_EXT_AUD_VOLUME" size="4" maxlength="3" value="<?=$923_EXT_AUD_VOLUME?>"></td>
+<td class="bb">&nbsp;<?=$924_EXT_AUD_STATE?></td>
+<td class="lb">12.</td>
+<td class="m4"><input type="radio" name="924_EXT_AUD_STATE" <?=$925_RADIO_EXT_AUD_ON?> value="on">On&nbsp;&nbsp;|<input type="radio" name="924_EXT_AUD_STATE" <?=$926_RADIO_EXT_AUD_OFF?> value="off">Off</td></tr>
+<tr>
+<td class="rb">Greeter Messages</td>
+<td class="bb">&nbsp;<?=$124_greeterMessagesVolume?></td>
+<td class="lb">13.</td>
+<td class="m4"><input type="text" name="124_greeterMessagesVolume" size="4" maxlength="3" value="<?=$124_greeterMessagesVolume?>"></td>
+<td class="bb">&nbsp;<?=$125_greeterMessagesState?></td>
+<td class="lb">14.</td>
+<td class="m4"><input type="radio" name="125_greeterMessagesState" <?=$501_RADIO_CHECKED_ON_6?> value="on">On&nbsp;&nbsp;|<input type="radio" name="125_greeterMessagesState" <?=$502_RADIO_CHECKED_OFF_6?> value="off">Off</td></tr>
+<tr>
+<td class="rb">Greeter2 Messages</td>
+<td class="bb">&nbsp;<?=$475_greeter2MessagesVolume?></td>
+<td class="lb">15.</td>
+<td class="m4"><input type="text" name="475_greeter2MessagesVolume" size="4" maxlength="3" value="<?=$475_greeter2MessagesVolume?>"></td>
+<td class="bb">&nbsp;<?=$476_greeterMessagesState?></td>
+<td class="lb">16.</td>
+<td class="m4"><input type="radio" name="476_greeter2MessagesState" <?=$505_RADIO_CHECKED_GTR2_ON?> value="on">On&nbsp;&nbsp;|<input type="radio" name="476_greeter2MessagesState" <?=$506_RADIO_CHECKED_GTR2_OFF?> value="off">Off</td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" id="f1a" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+</td></tr>
+</table></body></html>

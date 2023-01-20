@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormMiscSettings">
+<blockquote>NETWORK SETUP</blockquote>
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td width="195" class="rb">MAC Address</td>
+<td class="bb"><?=$162_addressMAC?>&nbsp;</td>
+<td width="20" class="lb">&nbsp;</td>
+<td class="m4" width="220">&nbsp;</td></tr>
+<tr>
+<td class="rb">Web Server Enabled?</td>
+<td class="bb"><?=$570_webEnabled?>&nbsp;</td>
+<td class="lb">1.</td>
+<td class="m4"><input type="radio" name="570_webEnabled" <?=$571_WEB_EN_CHECKED_YES?> value="yes">Yes&nbsp;&nbsp;|<input type="radio" name="570_webEnabled" <?=$572_WEB_EN_CHECKED_NO?> value="no">No</td></tr>
+<tr>
+<td class="rb">IP Address</td>
+<td class="bb"><?=$142_addressIP?>&nbsp;</td>
+<td class="lb">2.</td>
+<td class="m4">
+<input type="text" size="3" maxlength="3" name="143_addressIPf1" value="<?=$143_addressIPf1?>"> .
+<input type="text" size="3" maxlength="3" name="144_addressIPf2" value="<?=$144_addressIPf2?>"> .
+<input type="text" size="3" maxlength="3" name="145_addressIPf3" value="<?=$145_addressIPf3?>"> .
+<input type="text" size="3" maxlength="3" name="146_addressIPf4" value="<?=$146_addressIPf4?>"></td></tr>
+<tr>
+<td class="rb">Subnet Mask</td>
+<td class="bb"><?=$147_subnetMask?>&nbsp;</td>
+<td class="lb">3.</td>
+<td class="m4"><input type="text" size="3" maxlength="3" name="148_subnetMaskf1" value="<?=$148_subnetMaskf1?>"> .
+<input type="text" size="3" maxlength="3" name="149_subnetMaskf2" value="<?=$149_subnetMaskf2?>"> .
+<input type="text" size="3" maxlength="3" name="150_subnetMaskf3" value="<?=$150_subnetMaskf3?>"> .
+<input type="text" size="3" maxlength="3" name="151_subnetMaskf4" value="<?=$151_subnetMaskf4?>"></td></tr>
+<tr>
+<td class="rb">Default Gateway</td>
+<td class="bb"><?=$152_gatewayIP?>&nbsp;</td>
+<td class="lb">4.</td>
+<td class="m4"><input type="text" size="3" maxlength="3" name="153_gatewayIPf1" value="<?=$153_gatewayIPf1?>"> .
+<input type="text" size="3" maxlength="3" name="154_gatewayIPf2" value="<?=$154_gatewayIPf2?>"> .
+<input type="text" size="3" maxlength="3" name="155_gatewayIPf3" value="<?=$155_gatewayIPf3?>"> .
+<input type="text" size="3" maxlength="3" name="156_gatewayIPf4" value="<?=$156_gatewayIPf4?>"></td></tr>
+<tr>
+<td class="rb">Web Server Port Number</td>
+<td class="bb"><?=$596_webServerPort?>&nbsp;</td>
+<td class="lb">5.</td>
+<td class="m4"><input type="text" size="3" maxlength="5" name="596_webServerPort" value="<?=$596_webServerPort?>"></td></tr>
+<tr>
+<td class="rb">Email Support Enabled?</td>
+<td class="bb"><?=$573_emailEnabled?>&nbsp;</td>
+<td class="lb">6.</td>
+<td class="m4"><input type="radio" name="573_emailEnabled" <?=$574_EMAIL_EN_CHECKED_YES?> value="yes">Yes&nbsp;&nbsp;|<input type="radio" name="573_emailEnabled" <?=$575_EMAIL_EN_CHECKED_NO?> value="no">No</td></tr>
+<tr>
+<td class="rb">Email Server Address</td>
+<td class="bb"><?=$157_emailSrvIP?>&nbsp;</td>
+<td class="lb">7.</td>
+<td class="m4"><input type="text" size="3" maxlength="3" name="158_emailSrvIPf1" value="<?=$158_emailSrvIPf1?>"> .
+<input type="text" size="3" maxlength="3" name="159_emailSrvIPf2" value="<?=$159_emailSrvIPf2?>"> .
+<input type="text" size="3" maxlength="3" name="160_emailSrvIPf3" value="<?=$160_emailSrvIPf3?>"> .
+<input type="text" size="3" maxlength="3" name="161_emailSrvIPf4" value="<?=$161_emailSrvIPf4?>"></td></tr>
+<tr>
+<td class="rb">Email Address Suffix (After The @)</td>
+<td class="bb"><?=$255_emailDomain?>&nbsp;</td>
+<td class="lb">8.</td>
+<td class="m4"><input type="text" size="29" maxlength="<?=$256_EMAIL_DOMAIN_LENGTH?>" name="255_emailDomain" value="<?=$255_emailDomain?>"></td></tr>
+<tr>
+<td class="rb">Email Port Number</td>
+<td class="bb"><?=$597_emailPort?>&nbsp;</td>
+<td class="lb">9.</td>
+<td class="m4"><input type="text" size="3" maxlength="5" name="597_emailPort" value="<?=$597_emailPort?>"></td></tr>
+
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><font face="arial" color="#FF0000"><b>Attention! Changing network settings could render this device inaccessible from this computer.</b></font>
+<br><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+</td></tr>
+</table></body></html>

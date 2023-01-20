@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<blockquote>INSTALLER SETTINGS</blockquote>
+<form action="" method="POST" name="InstallerAction" onsubmit="">
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td class="rb" align="center" colspan = "3"><h4>WARNING! Please be sure of the consequences<BR>before executing any of the following!</h4></td></tr>
+<tr>
+<td class="lb" width="17">1.</td>
+<td class="m4">Factory Reset Base-station (Except Network Settings)</td>
+<td class="m4"><input type="radio" name="701_BASE_RESTART" <?=$703_RADIO_FACTORY_RESET?> value="FACTORY RESET"></td></tr>
+<tr>
+<td class="lb" width="17">2.</td>
+<td class="m4">Load Installer Settings</td>
+<td class="m4"><input type="radio" name="701_BASE_RESTART" <?=$704_RADIO_LOAD_SETTING?> value="LOAD SETTING"></td></tr>
+<tr>
+<td class="lb" width="17">3.</td>
+<td class="m4">Save Installer Settings</td>
+<td class="m4"><input type="radio" name="701_BASE_RESTART" <?=$705_RADIO_SAVE_SETTING?> value="SAVE SETTING"></td></tr>
+<tr>
+<td class="lb" width="17">4.</td>
+<td class="m4">Reset Timer Database</td>
+<td class="m4"><input type="radio" name="701_BASE_RESTART" <?=$953_RADIO_RESET_TIMER?> value="RESET TIMER"></td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td></td>
+<td id="f3" align="center" width="140"><?=$706_EXECUTE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+
+<form action="" method="POST" name="InstallerSetting" onsubmit="document.InstallerAction.701='NO ACTION'">
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td class="rb">Use Custom Tech Service Message ?</td>
+<td class="bb"><?=$009_altTechEnabled?>&nbsp;</td>
+<td width="20" class="lb">5.</td>
+<td width="250" class="m4"><input type="radio" name="009_altTechEnabled" <?=$547_RADIO_CHECKED_ALT_TECH_YES?> value="yes">Yes&nbsp;&nbsp;|<input type="radio" name="009_altTechEnabled" <?=$548_RADIO_CHECKED_ALT_TECH_NO?> value="no">No</td></tr>
+<tr>
+<td class="rb">Custom Tech Service Message</td>
+<td class="bb"><?=$010_altTechMsg?>&nbsp;</td>
+<td width="20" class="lb">6.</td>
+<td width="250" class="m4"><input type="text" size="29" maxlength="<?=$127_ALT_TECH_LENGTH_DEF?>" name="010_altTechMsg" value="<?=$010_altTechMsg?>"></td></tr>
+<tr>
+<td class="rb">Is This Installation In France?</td>
+<td class="bb"><?=$960_InstallInFrance?>&nbsp;</td>
+<td width="20" class="lb">7.</td>
+<td width="250" class="m4"><input type="radio" name="960_InstallInFrance" <?=$961_RADIO_CHECKED_IN_FRANCE_YES?> value="yes">Yes&nbsp;&nbsp;|<input type="radio" name="960_InstallInFrance" <?=$962_RADIO_CHECKED_IN_FRANCE_NO?> value="no">No</td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td></tr>
+</table>
+
+</td></tr>
+</table></body></html>

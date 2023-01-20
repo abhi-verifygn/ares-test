@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+</head>
+<body>
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="TimeSetUp">
+<blockquote>CURRENT&nbsp;SETTINGS</blockquote>
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td width="220" class="rb">Local Date and Time<br>(YYYY/MM/DD HH:MM:SS)</td>
+<td class="bb"><?=$580_dateTime?>&nbsp;</td>
+<td class="lb" width="30">1-5.</td>
+<td class="m4" width="270">20<input type="text" name="692_DATE_YEAR" size="1" maxlength="2" value="<?=$692_DATE_YEAR?>">
+/<input type="text" name="693_DATE_MONTH" size="1" maxlength="2" value="<?=$693_DATE_MONTH?>">
+/<input type="text" name="694_DATE_DAY" size="1" maxlength="2" value="<?=$694_DATE_DAY?>">
+<br><input type="text" name="695_TIME_HOUR" size="1" maxlength="2" value="<?=$695_TIME_HOUR?>">
+:<input type="text" name="696_TIME_MINUTE" size="1" maxlength="2" value="<?=$696_TIME_MINUTE?>">
+:<input type="text" name="535_TIME_SECOND" size="1" maxlength="2" value="<?=$535_TIME_SECOND?>">
+</td></tr>
+<tr>
+<td class="rb">Time Zone</td>
+<td class="bb"><?=$608_Timezone?>&nbsp;</td>
+<td class="lb" width="20">6.</td>
+<td class="m4" width="100"><select name="608_Timezone" size="1">
+<option value="">-- Select here --</option>
+<option value="0">Not Specified</option>
+<option value="1">GMT-12:00 Int.Date Line</option>
+<option value="2">GMT-11:00 Samoa</option>
+<option value="3">GMT-10:00 Hawaii</option>
+<option value="4">GMT-09:00 Alaska</option>
+<option value="5">GMT-08:00 Pacific Time</option>
+<option value="6">GMT-07:00 Mountain Time</option>
+<option value="7">GMT-06:00 Central Time</option>
+<option value="8">GMT-05:00 Eastern Time</option>
+<option value="9">GMT-04:00 Atlantic Time</option>
+<option value="10">GMT-03:30 Newfoundland</option>
+<option value="11">GMT-03:00 Buenos Aires</option>
+<option value="12">GMT-02:00 Mid-Atlantic</option>
+<option value="13">GMT-01:00 Azores</option>
+<option value="14">GMT 00:00 London</option>
+<option value="15">GMT+01:00 Paris</option>
+<option value="16">GMT+02:00 Cairo</option>
+<option value="17">GMT+03:00 Moscow</option>
+<option value="18">GMT+03:30 Tehran</option>
+<option value="19">GMT+04:00 Abu Dhabi</option>
+<option value="20">GMT+04:30 Kabul</option>
+<option value="21">GMT+05:00 Karachi</option>
+<option value="22">GMT+05:30 New Delhi</option>
+<option value="23">GMT+05:45 Kathmandu</option>
+<option value="24">GMT+06:00 Novosibirsk</option>
+<option value="25">GMT+06:30 Rangoon</option>
+<option value="26">GMT+07:00 Bangkok</option>
+<option value="27">GMT+08:00 Hong Kong</option>
+<option value="28">GMT+09:00 Tokyo</option>
+<option value="29">GMT+09:30 Adelaide</option>
+<option value="30">GMT+10:00 Sydney</option>
+<option value="31">GMT+11:00 New Caledonia</option>
+<option value="32">GMT+12:00 Fiji</option>
+<option value="33">GMT+13:00 Nuku'alofa</option>
+</select></td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td></td>
+<td id="f3" align="center" width="140"><input type="submit" value="Update clock"></td></tr>
+</table>
+</form>
+
+<form action="" method="POST" name="LaneSetUp">
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+<tr>
+<td class="rb">Selected Order Taker Mode</td>
+<td class="bb"><?=$243_selectedMode?>&nbsp;</td>
+<td class="lb" width="20">&nbsp;</td>
+<td class="m4">Can be changed in Order Taking Menu&nbsp;</td></tr>
+<tr>
+<td class="rb">Dual Lane Mode</td>
+<td class="bb"><?=$235_lane1SplitCross?>&nbsp;</td>
+<td width="20" class="lb">7.</td>
+<td class="m4" width="120"><input type="radio" name="235_lane1SplitCross" <?=$531_RADIO_CHECKED_SPLIT_21?> value="SPLIT">Split&nbsp;&nbsp;|<input type="radio" name="235_lane1SplitCross" <?=$532_RADIO_CHECKED_CROSS_21?> value="CROSS">Cross</td></tr>
+<tr>
+<td class="rb">Order Point Volume Mode</td>
+<td class="bb"><?=$609_DayNightFlag?>&nbsp;</td>
+<td width="20" class="lb">8.</td>
+<td class="m4" width="120"><input type="radio" name="609_DayNightFlag" <?=$610_RADIO_CHECKED_DAY?> value="DAY">Day&nbsp;&nbsp;&nbsp;&nbsp;|<input type="radio" name="609_DayNightFlag" <?=$611_RADIO_CHECKED_NIGHT?> value="NIGHT">Night</td></tr>
+</table>
+</td></tr>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td></td>
+<td id="f3" align="center" width="140"><?=$576_UPDATE_BUTTON_DEF?></td></tr>
+</table>
+</form>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td></tr>
+</table>
+</td></tr>
+</table></body></html>

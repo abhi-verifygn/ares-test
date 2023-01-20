@@ -1,0 +1,84 @@
+body, html {
+  background: #000000;
+  color: #0A3450;
+  height: 100%;
+  margin: 0px;
+  overflow-y: auto;
+  padding: 0px;
+  scrollbar-3Dlight-color: #000000;
+  scrollbar-arrow-color: #FFFFFF;
+  scrollbar-darkshadow-color: #000000;
+  scrollbar-face-color: #AA0000;
+  scrollbar-highlight-color: #000000;
+  scrollbar-shadow-color: #000000;
+  scrollbar-track-color: #300000;
+}
+
+form{
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  background-image: url(../images/ar.gif);
+  background-position: 112px 3px;
+  background-repeat: no-repeat;
+  color: #F5F5F5;
+  font: bold 10px verdana;
+  margin: 15px 0px 4px 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+}
+
+ul li {
+  background-image: url(../images/tbg.gif);
+  border-left: 6px solid #0A3450;
+  height: 22px;
+  text-indent: 6px;
+}
+
+ul li a {
+  color: #0A3450;
+  display: block;
+  font: bold 11px arial;
+  height: 21px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+ul li option {
+  color: #0A3450;
+  display: block;
+  font: bold 11px arial;
+  height: 21px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+ul li select {
+  width: 100%;
+}
+
+ul li a:active {
+  color: #FF1111;
+  font: bold 11px arial;
+  height: 22px;
+  line-height: 22px;
+}
+
+ul li a:hover {
+  background: black;
+  background-image: url(../images/arw.gif);
+  background-position: 3px 8px;
+  background-repeat: no-repeat;
+  color: #DCE15A;
+  font: bold 12px arial;
+  height: 22px;
+  line-height: 22px;
+  text-indent: 15px;
+}

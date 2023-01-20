@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../styles/css.css">
+<title></title>
+<script type="text/javascript">
+function WriteOptions(trg)
+{
+  switch(trg)
+  {
+    case 0:document.write("<select name=\"CLIP_TRIGGERS.au8MsgIndex[0]\" size=\"1\">");break;
+    case 1:document.write("<select name=\"CLIP_TRIGGERS.au8MsgIndex[1]\" size=\"1\">");break;
+    case 2:document.write("<select name=\"CLIP_TRIGGERS.au8MsgIndex[2]\" size=\"1\">");break;
+    case 3:document.write("<select name=\"CLIP_TRIGGERS.au8MsgIndex[3]\" size=\"1\">");break;
+  }
+  document.write("<option value=\"\">-- Select here --</option>");
+  document.write("<option value=\"255\">Original Mode</option>");
+  if((<?=CLIP_AUDIO[0].u8Type?>) == 0){document.write("<option value=\"0\"><?=CLIP_AUDIO[0].szName?></option>");}
+  if((<?=CLIP_AUDIO[1].u8Type?>) == 0){document.write("<option value=\"1\"><?=CLIP_AUDIO[1].szName?></option>");}
+  if((<?=CLIP_AUDIO[2].u8Type?>) == 0){document.write("<option value=\"2\"><?=CLIP_AUDIO[2].szName?></option>");}
+  if((<?=CLIP_AUDIO[3].u8Type?>) == 0){document.write("<option value=\"3\"><?=CLIP_AUDIO[3].szName?></option>");}
+  if((<?=CLIP_AUDIO[4].u8Type?>) == 0){document.write("<option value=\"4\"><?=CLIP_AUDIO[4].szName?></option>");}
+  if((<?=CLIP_AUDIO[5].u8Type?>) == 0){document.write("<option value=\"5\"><?=CLIP_AUDIO[5].szName?></option>");}
+  if((<?=CLIP_AUDIO[6].u8Type?>) == 0){document.write("<option value=\"6\"><?=CLIP_AUDIO[6].szName?></option>");}
+  if((<?=CLIP_AUDIO[7].u8Type?>) == 0){document.write("<option value=\"7\"><?=CLIP_AUDIO[7].szName?></option>");}
+  if((<?=CLIP_AUDIO[8].u8Type?>) == 0){document.write("<option value=\"8\"><?=CLIP_AUDIO[8].szName?></option>");}
+  if((<?=CLIP_AUDIO[9].u8Type?>) == 0){document.write("<option value=\"9\"><?=CLIP_AUDIO[9].szName?></option>");}
+  if((<?=CLIP_AUDIO[10].u8Type?>) == 0){document.write("<option value=\"10\"><?=CLIP_AUDIO[10].szName?></option>");}
+  if((<?=CLIP_AUDIO[11].u8Type?>) == 0){document.write("<option value=\"11\"><?=CLIP_AUDIO[11].szName?></option>");}
+  if((<?=CLIP_AUDIO[12].u8Type?>) == 0){document.write("<option value=\"12\"><?=CLIP_AUDIO[12].szName?></option>");}
+  if((<?=CLIP_AUDIO[13].u8Type?>) == 0){document.write("<option value=\"13\"><?=CLIP_AUDIO[13].szName?></option>");}
+  if((<?=CLIP_AUDIO[14].u8Type?>) == 0){document.write("<option value=\"14\"><?=CLIP_AUDIO[14].szName?></option>");}
+  if((<?=CLIP_AUDIO[15].u8Type?>) == 0){document.write("<option value=\"15\"><?=CLIP_AUDIO[15].szName?></option>");}
+  document.write("</select>");
+}
+</script>
+</head>
+<body>
+
+<table class="MMM">
+<tr><td>
+<form action="" method="POST" name="FormGreeterSetup">
+<blockquote>ALERT MESSAGE INPUTS</blockquote>
+<table class="M1" align="center" border="1" cellspacing="6">
+<tr><td class="M2">
+<table class="M3" align="center" cellspacing="0" cellpadding="4">
+
+<tr>
+<td class="rb" colspan="4">SPLIT/CROSS Input Pin</td>
+<td class="bb">
+<?=CLIP_TRIGGERS.aszMsg[3]?>
+<td class="lb">1.</td>
+<td class="m4" colspan="3">
+<script type="text/javascript">WriteOptions(3);</script>
+<noscript>
+<select name="CLIP_TRIGGERS.au8MsgIndex[3]" size="1">
+<option value="">-- Select here --</option>
+<option value="255">Original Mode</option>
+<option value=\"0\"><?=CLIP_AUDIO[0].szName?></option>
+<option value=\"1\"><?=CLIP_AUDIO[1].szName?></option>
+<option value=\"2\"><?=CLIP_AUDIO[2].szName?></option>
+<option value=\"3\"><?=CLIP_AUDIO[3].szName?></option>
+<option value=\"4\"><?=CLIP_AUDIO[4].szName?></option>
+<option value=\"5\"><?=CLIP_AUDIO[5].szName?></option>
+<option value=\"6\"><?=CLIP_AUDIO[6].szName?></option>
+<option value=\"7\"><?=CLIP_AUDIO[7].szName?></option>
+<option value=\"8\"><?=CLIP_AUDIO[8].szName?></option>
+<option value=\"9\"><?=CLIP_AUDIO[9].szName?></option>
+<option value=\"10\"><?=CLIP_AUDIO[10].szName?></option>
+<option value=\"11\"><?=CLIP_AUDIO[11].szName?></option>
+<option value=\"12\"><?=CLIP_AUDIO[12].szName?></option>
+<option value=\"13\"><?=CLIP_AUDIO[13].szName?></option>
+<option value=\"14\"><?=CLIP_AUDIO[14].szName?></option>
+<option value=\"15\"><?=CLIP_AUDIO[15].szName?></option>
+</select>
+</noscript>
+</td></tr>
+
+<tr>
+<td class="rb" colspan="4">ORDER TAKING Input Pin</td>
+<td class="bb">
+<?=CLIP_TRIGGERS.aszMsg[2]?>
+<td class="lb">2.</td>
+<td class="m4" colspan="3">
+<script type="text/javascript">WriteOptions(2);</script>
+<noscript>
+<select name="CLIP_TRIGGERS.au8MsgIndex[2]" size="1">
+<option value="">-- Select here --</option>
+<option value="255">Original Mode</option>
+<option value=\"0\"><?=CLIP_AUDIO[0].szName?></option>
+<option value=\"1\"><?=CLIP_AUDIO[1].szName?></option>
+<option value=\"2\"><?=CLIP_AUDIO[2].szName?></option>
+<option value=\"3\"><?=CLIP_AUDIO[3].szName?></option>
+<option value=\"4\"><?=CLIP_AUDIO[4].szName?></option>
+<option value=\"5\"><?=CLIP_AUDIO[5].szName?></option>
+<option value=\"6\"><?=CLIP_AUDIO[6].szName?></option>
+<option value=\"7\"><?=CLIP_AUDIO[7].szName?></option>
+<option value=\"8\"><?=CLIP_AUDIO[8].szName?></option>
+<option value=\"9\"><?=CLIP_AUDIO[9].szName?></option>
+<option value=\"10\"><?=CLIP_AUDIO[10].szName?></option>
+<option value=\"11\"><?=CLIP_AUDIO[11].szName?></option>
+<option value=\"12\"><?=CLIP_AUDIO[12].szName?></option>
+<option value=\"13\"><?=CLIP_AUDIO[13].szName?></option>
+<option value=\"14\"><?=CLIP_AUDIO[14].szName?></option>
+<option value=\"15\"><?=CLIP_AUDIO[15].szName?></option>
+</select>
+</noscript>
+</td></tr>
+
+<tr>
+<td class="rb" colspan="4">DAY/NIGHT Input Pin</td>
+<td class="bb">
+<?=CLIP_TRIGGERS.aszMsg[1]?>
+<td class="lb">3.</td>
+<td class="m4" colspan="3">
+<script type="text/javascript">WriteOptions(1);</script>
+<noscript>
+<select name="CLIP_TRIGGERS.au8MsgIndex[1]" size="1">
+<option value="">-- Select here --</option>
+<option value="255">Original Mode</option>
+<option value=\"0\"><?=CLIP_AUDIO[0].szName?></option>
+<option value=\"1\"><?=CLIP_AUDIO[1].szName?></option>
+<option value=\"2\"><?=CLIP_AUDIO[2].szName?></option>
+<option value=\"3\"><?=CLIP_AUDIO[3].szName?></option>
+<option value=\"4\"><?=CLIP_AUDIO[4].szName?></option>
+<option value=\"5\"><?=CLIP_AUDIO[5].szName?></option>
+<option value=\"6\"><?=CLIP_AUDIO[6].szName?></option>
+<option value=\"7\"><?=CLIP_AUDIO[7].szName?></option>
+<option value=\"8\"><?=CLIP_AUDIO[8].szName?></option>
+<option value=\"9\"><?=CLIP_AUDIO[9].szName?></option>
+<option value=\"10\"><?=CLIP_AUDIO[10].szName?></option>
+<option value=\"11\"><?=CLIP_AUDIO[11].szName?></option>
+<option value=\"12\"><?=CLIP_AUDIO[12].szName?></option>
+<option value=\"13\"><?=CLIP_AUDIO[13].szName?></option>
+<option value=\"14\"><?=CLIP_AUDIO[14].szName?></option>
+<option value=\"15\"><?=CLIP_AUDIO[15].szName?></option>
+</select>
+</noscript>
+</td></tr>
+
+<tr>
+<td class="rb" colspan="4">EXT_MSG Input Pin</td>
+<td class="bb">
+<?=CLIP_TRIGGERS.aszMsg[0]?>
+<td class="lb">4.</td>
+<td class="m4" colspan="3">
+<script type="text/javascript">WriteOptions(0);</script>
+<noscript>
+<select name="CLIP_TRIGGERS.au8MsgIndex[0]" size="1">
+<option value="">-- Select here --</option>
+<option value="255">Original Mode</option>
+<option value=\"0\"><?=CLIP_AUDIO[0].szName?></option>
+<option value=\"1\"><?=CLIP_AUDIO[1].szName?></option>
+<option value=\"2\"><?=CLIP_AUDIO[2].szName?></option>
+<option value=\"3\"><?=CLIP_AUDIO[3].szName?></option>
+<option value=\"4\"><?=CLIP_AUDIO[4].szName?></option>
+<option value=\"5\"><?=CLIP_AUDIO[5].szName?></option>
+<option value=\"6\"><?=CLIP_AUDIO[6].szName?></option>
+<option value=\"7\"><?=CLIP_AUDIO[7].szName?></option>
+<option value=\"8\"><?=CLIP_AUDIO[8].szName?></option>
+<option value=\"9\"><?=CLIP_AUDIO[9].szName?></option>
+<option value=\"10\"><?=CLIP_AUDIO[10].szName?></option>
+<option value=\"11\"><?=CLIP_AUDIO[11].szName?></option>
+<option value=\"12\"><?=CLIP_AUDIO[12].szName?></option>
+<option value=\"13\"><?=CLIP_AUDIO[13].szName?></option>
+<option value=\"14\"><?=CLIP_AUDIO[14].szName?></option>
+<option value=\"15\"><?=CLIP_AUDIO[15].szName?></option>
+</select>
+</noscript>
+</td></tr>
+</table>
+</table>
+<table class="F1" align="center" cellspacing="0">
+<tr><td><?=$477_LAST_ERROR_MESSAGE?></td>
+<td id="f3" align="center" width="140"><input type="submit" name="936_GrtAction" value="Apply Changes"></td></tr>
+</table>
+</form>
+</body></html>
