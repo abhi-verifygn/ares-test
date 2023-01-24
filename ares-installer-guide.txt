@@ -1,0 +1,20 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARES Installer Package~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+|
+Tested OS version: Ubuntu 20.4.05
+
+Steps to Install:
+1. Extract the content of ares-installer-package as it is to desktop (Note: don't extract into subfolder)
+2. After extraction there are two ways to execute the script:
+	a. GUI method:
+		i.  locate ares-installer on the desktop
+	   ii.  right-click ares-installer and select "allow-launching" option 
+	  iii.  Doucble-click ares-installer for installation
+	b. Terminal method:
+		i.  locate ares.sh script on the desktop
+	   ii.  execute script using following commands: (enter root password when prompted)
+	            cd ~/Desktop
+	            sudo ./ares.sh
+|
+|__________________________________________________________________________________________________________
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
